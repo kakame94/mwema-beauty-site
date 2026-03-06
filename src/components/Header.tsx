@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const navLinks = [
   { href: "/", label: "Accueil" },
@@ -17,9 +18,13 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-9 h-9 bg-orchid rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm font-[family-name:var(--font-heading)]">M</span>
-            </div>
+            <Image
+              src="/images/logo.jpg"
+              alt="Mwema Beauty"
+              width={36}
+              height={36}
+              className="rounded-full object-cover"
+            />
             <span className="text-xl font-bold text-mblack font-[family-name:var(--font-heading)]">
               Mwema Beauty
             </span>
