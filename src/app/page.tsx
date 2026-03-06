@@ -177,7 +177,7 @@ export default function Home() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-orchid mt-0.5">&#9679;</span>
-                    Mardi - Samedi: 9h - 17h
+                    Mar-Sam: 8h-19h | Dim: 7h-16h
                   </li>
                 </ul>
               </div>

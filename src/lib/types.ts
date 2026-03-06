@@ -13,9 +13,10 @@ export interface Product {
 export interface Service {
   id: string;
   name: string;
-  category: "locs" | "tresses" | "coiffure" | "formation";
-  price: number;
-  duration_hours: number;
+  category: string;
+  price: number | null;
+  price_note: string;
+  duration: string;
   description: string;
 }
 
